@@ -57,13 +57,13 @@ export function Header() {
           className="[@media(min-width:820px)]:flex hidden items-center gap-6 flex-1 justify-center"
         >
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="block text-sm font-medium text-muted-text hover:text-[#004AAD] transition-all duration-200 ease-in-out transform hover:-translate-y-0.5 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD]"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -74,7 +74,7 @@ export function Header() {
             className="flex-shrink-0 border-0 text-white font-semibold hidden sm:inline-flex"
             style={{ background: "linear-gradient(90deg, #5DE0E6, #004AAD)", color: "#fff" }}
             nativeButton={false}
-            render={<a href="/#contact" id="header-cta" onClick={() => setIsMobileMenuOpen(false)} />}
+            render={<Link href="/#contact" id="header-cta" onClick={() => setIsMobileMenuOpen(false)} />}
           >
             Get help now
           </Button>
@@ -109,14 +109,14 @@ export function Header() {
         <div className="[@media(min-width:820px)]:hidden absolute top-full left-0 right-0 bg-white border-b border-line shadow-lg py-4 px-4 sm:px-6 flex flex-col gap-4 max-h-[calc(100vh-70px)] overflow-y-auto">
           <nav className="flex flex-col gap-2">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="block py-3 px-4 text-base font-medium text-ink bg-gray-50 rounded-lg hover:bg-[#F4F7FA] hover:text-[#004AAD] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <Button
@@ -124,7 +124,7 @@ export function Header() {
             className="w-full justify-center border-0 text-white font-semibold py-6 sm:hidden mt-2"
             style={{ background: "linear-gradient(90deg, #5DE0E6, #004AAD)", color: "#fff" }}
             nativeButton={false}
-            render={<a href="/#contact" onClick={() => setIsMobileMenuOpen(false)} />}
+            render={<Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} />}
           >
             Get help now
           </Button>

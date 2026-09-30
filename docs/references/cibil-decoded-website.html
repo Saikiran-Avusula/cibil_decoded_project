@@ -1,0 +1,111 @@
+# CIBIL Decoded — Project Context & Build Plan
+
+## Project
+
+Business: credit-report guidance and loan-assistance service, Hyderabad,
+serving Telangana and Andhra Pradesh. Helps people understand credit reports,
+identify discrepancies, navigate disputes. Connects customers to lenders.
+Does NOT lend money, is NOT a credit bureau, NOT RBI-regulated.
+
+Stack: Next.js 15 (App Router, TS strict), Tailwind, shadcn/ui, Framer Motion
+(sparing, only where noted below), React Hook Form + Zod. Backend (later,
+separate document): Spring Boot + MySQL.
+
+Reference files expected in the repo:
+- docs/reference/cibil-decoded-website.html — exact copy, section content
+- docs/reference/logo.png — actual logo file, use for header/favicon
+
+## Brand palette (from actual logo, do not substitute other colors)
+
+- Brand gradient (primary accent — "CIBIL" text, magnifying glass, key
+  highlights): `#5DE0E6` → `#004AAD`. Tailwind: `bg-gradient-to-r from-[#5DE0E6] to-[#004AAD]`.
+- Solid blue (buttons, links, icons, focus rings): `#004AAD`.
+- Solid teal (secondary accents only, pair with dark text on top): `#5DE0E6`.
+- Ink / body text and headings — flat color, never gradient: `#1C1C1C`.
+- Section background (alternating sections): `#F4F7FA`.
+- Line / border: `#D8E1EA`.
+- Muted text: `#5A5A5A`.
+- Error only, never used elsewhere: `#B42318`.
+- White: `#FFFFFF`.
+- Border radius: one value, 8px, everywhere.
+- Shadows: only on the hero's sample-report card and the form. Borders
+  everywhere else.
+
+## Hard rules, every phase
+
+- Never write: "RBI regulated", "credit repair", "guaranteed approval",
+  or any bureau-affiliation claim. Enforced by BANNED_PHRASES test (Phase 1).
+- Never invent fake reviews, fake partner names, fake statistics.
+- No colors outside the palette above.
+- Gradient reserved for the "CIBIL" wordmark/accents — never on body
+  headings, paragraphs, or buttons (readability).
+
+## Why this section order (psychology, stated once)
+
+A first-time visitor runs an unconscious sequence: is this real → do they
+get my problem → can I picture how this works → have people like me used
+this → what's the catch → how do I start. Sections are ordered to answer
+those questions in that order.
+
+---
+
+## Section specs
+
+**1. Header** — sticky, white, 1px bottom border (not shadow). Logo left
+(gradient "CIBIL" + flat-ink "decoded"), nav anchors, one primary button.
+Shrinks padding slightly on scroll (Framer Motion, one line).
+
+**2. Hero** — "is this real," first 3 seconds. Two-column: headline +
+positioning line + two buttons + trust line (left); sample-report card
+with one flagged row, labeled "Sample illustration, not a real report"
+(right). No stock photos. Fade/slide-up once on load, 400ms.
+
+**3. What we solve** — shaded bg. Understand/Resolve/Finance cards (icon +
+heading + one sentence). Comparison table below (bureaus / score apps /
+CIBIL Decoded), CIBIL Decoded column tinted with the teal accent.
+
+**4. Bureaus** — white bg. Four plain cards (TransUnion CIBIL, Experian,
+Equifax, CRIF High Mark), one sentence each. Disclaimer line below: not
+affiliated with any of them. Deliberately plain, no color accents — reads
+as neutral reference, not a pitch.
+
+**5. Process** — shaded bg. Vertical stepper, 6 steps, numbered circles,
+connecting line. Bold title + one sentence per step. Only section allowed
+scroll-triggered animation (`whileInView`, once per step, no replay).
+
+**6. Problems we look at** — white bg. Chip/pill list, scannable in under
+2 seconds. Disclaimer line on accurate entries and identity fraud.
+
+**7. Loans** — shaded bg. Chip list of 8 loan categories. Three dashed-border
+placeholder cards: "Lending Partner 1/2/3," visually distinct from real
+content.
+
+**8. Consultation** — white bg. Three cards: Phone, WhatsApp, Video, each
+with a real `tel:`/`wa.me` link (placeholder numbers for now).
+
+**9. Reviews** — conditional. Renders nothing if the reviews array is
+empty — never a placeholder/fake review card. When real reviews exist:
+name/city, one-line problem, quote, optional photo.
+
+**10. FAQ** — shadcn Accordion, one open at a time, ordered from most
+common doubt ("can you guarantee my score") to specific questions.
+
+**11. Contact form** — two-column desktop, one-column mobile. Visible line
+near the top: never asks for PAN/Aadhaar/OTP/passwords. Inline validation
+on blur. Calm, non-celebratory success state.
+
+**12. Footer** — trust anchor, plain and dense on purpose. Contact
+placeholders, grievance officer, registration placeholders, legal links,
+full disclaimer.
+
+---
+
+## Build phases (Copilot/Cursor-ready prompts)
+
+Paste one phase prompt per fresh chat. Always start with:
+"Read this file first. Build only Phase [N] below."
+
+### Phase 1 — Scaffold + design system
+Scaffold Next.js 15 (App Router, TS strict) + Tailwind + shadcn/ui +
+Framer Motion + next/font (Sora headings, Source Sans 3 body). Apply the
+palette above as Tailwind theme tokens. Folder structure:

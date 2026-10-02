@@ -13,13 +13,42 @@ export default function PrivacyPolicyPage() {
         </Link>
         <h1 className="text-3xl font-sora font-bold text-ink mb-6">Privacy Policy</h1>
         <div className="prose prose-slate max-w-none text-muted-text space-y-4">
-          <p>
-            [PLACEHOLDER: Please replace this text with your exact Privacy Policy.]
-          </p>
-          <p>
-            This is a generic placeholder for the Privacy Policy page. As stated in the 
-            project reference, the exact text will be provided by the business owner.
-          </p>
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">Who we are</h2>
+            <p>This website is run by Saikiran Avusula, trading as CIBIL Decoded, based in Hyderabad, Telangana.</p>
+          </section>
+          
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">What we collect</h2>
+            <p>From the enquiry form: name, mobile number, email, city, the type of help needed, preferred contact method and time, and your description. Later, only with your written consent, we may collect credit report details needed for your case.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">What we never ask for</h2>
+            <p>We do not collect PAN, Aadhaar, bank account details, passwords or OTPs through this website. We will never ask for your OTP or your bureau/email password at any stage.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">Why we use your data</h2>
+            <p>To contact you about your enquiry, review your credit report issue, and — only if you ask — assess loan options and share relevant details with lending partners.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">Storage</h2>
+            <p>Your enquiry is stored in a secured Google Sheet accessible only to Saikiran Avusula / CIBIL Decoded. We do not sell your data.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">Your rights</h2>
+            <p>You can ask us to show, correct or delete your data, or withdraw consent, by writing to cibildecoded@gmail.com.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">Retention</h2>
+            <p>We keep enquiry data for up to 6 months if no service is provided, and for the duration of any active case plus 1 year after it closes.</p>
+          </section>
+
+          <p className="pt-4 text-sm font-semibold">Last updated: October 2, 2026</p>
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ export function Footer() {
             <h3 className="text-white font-sora font-semibold mb-2">Contact Us</h3>
             {/* <p className="text-sm">Phone: <a href="tel:+919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
             <p className="text-sm">Email: <a href="mailto:support@cibildecoded.in" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">cibildecoded@gmail.com</a></p>
-            {/* <p className="text-sm">WhatsApp: <a href="https://wa.me/919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
+          {/* <p className="text-sm">WhatsApp: <a href="https://wa.me/919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
           </div>
 
           {/* Column 3: Links */}

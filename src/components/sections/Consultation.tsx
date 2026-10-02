@@ -64,7 +64,7 @@ export function Consultation() {
               className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA]"
               variant="outline"
               nativeButton={false}
-              render={<a href="https://meet.google.com" target="_blank" rel="noopener noreferrer" />}
+              render={<a href="/book" />}
             >
               Book a meeting
             </Button>

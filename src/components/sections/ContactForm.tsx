@@ -50,11 +50,25 @@ export function ContactForm() {
       return;
     }
 
-    console.log("Validated Form Payload:", data);
-    // TODO: replace with real API call in Phase 8+
-    
-    // Simulate API delay
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+      if (scriptUrl) {
+        await fetch(scriptUrl, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            formType: "contact",
+            ...data,
+            submittedAt: new Date().toISOString(),
+          }),
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
     
     setIsSuccess(true);
     form.reset();
@@ -73,9 +87,9 @@ export function ContactForm() {
         <div className="bg-white rounded-lg border border-line p-6 md:p-10 shadow-sm">
           {isSuccess ? (
             <div className="text-center py-12">
-              <h3 className="font-heading text-xl text-ink mb-2">Received.</h3>
+              <h3 className="font-heading text-xl text-[#0A2540] mb-2">Request Received</h3>
               <p className="text-muted-text">
-                We&apos;ll contact you by your preferred method shortly.
+                Your request has been sent. We'll send a confirmation email shortly.
               </p>
               <Button
                 variant="outline"

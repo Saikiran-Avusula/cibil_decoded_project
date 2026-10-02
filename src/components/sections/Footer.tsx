@@ -27,9 +27,9 @@ export function Footer() {
           {/* Column 2: Contact Placeholders */}
           <div className="flex flex-col gap-3">
             <h3 className="text-white font-sora font-semibold mb-2">Contact Us</h3>
-            <p className="text-sm">Phone: <a href="tel:+919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">+91 98765 43210</a></p>
-            <p className="text-sm">Email: <a href="mailto:support@cibildecoded.in" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">support@cibildecoded.in</a></p>
-            <p className="text-sm">WhatsApp: <a href="https://wa.me/919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">+91 98765 43210</a></p>
+            {/* <p className="text-sm">Phone: <a href="tel:+919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
+            <p className="text-sm">Email: <a href="mailto:support@cibildecoded.in" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">cibildecoded@gmail.com</a></p>
+            {/* <p className="text-sm">WhatsApp: <a href="https://wa.me/919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
           </div>
 
           {/* Column 3: Links */}
@@ -45,11 +45,11 @@ export function Footer() {
             <h3 className="text-white font-sora font-semibold mb-2">Business Details</h3>
             <p className="text-sm">CIBIL Decoded Services</p>
             <p className="text-sm leading-relaxed">
-              [Office Address Line 1]<br />
-              Hyderabad, Telangana<br />
-              India - 500001
+              {/* [Office Address Line 1] */}
+              Kukatpally, Hyderabad, Telangana<br />
+              India - 500072
             </p>
-            <p className="text-sm mt-2 text-white/60">CIN: [Placeholder CIN]</p>
+            {/* <p className="text-sm mt-2 text-white/60">CIN: [Placeholder CIN]</p> */}
           </div>
         </div>
 

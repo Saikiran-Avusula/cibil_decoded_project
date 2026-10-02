@@ -24,8 +24,8 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">What we never ask for</h2>
-            <p>We do not collect PAN, Aadhaar, bank account details, passwords or OTPs through this website. We will never ask for your OTP or your bureau/email password at any stage.</p>
+            <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">Data Security Notice</h2>
+            <p>We prioritize your absolute privacy. Sensitive government or financial identifiers (such as PAN cards, Aadhaar details, bank passwords, or OTPs) are never requested, stored, or scraped without your explicit approval and a verified use case.</p>
           </section>
 
           <section>

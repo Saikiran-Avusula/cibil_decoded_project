@@ -23,13 +23,11 @@ export function Consultation() {
               <p className="text-sm text-muted-text mt-1">Will be soon available </p>
             </div>
             <Button
-              className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA]"
+              className="mt-2 w-full opacity-50 cursor-not-allowed"
               variant="outline"
               disabled
-              nativeButton={false}
-              render={<a href="tel:+919876543210" />}
             >
-              Call now
+              Coming soon
             </Button>
           </div>
 
@@ -43,12 +41,11 @@ export function Consultation() {
               <p className="text-sm text-muted-text mt-1">Will be soon available</p>
             </div>
             <Button
-              className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA]"
+              className="mt-2 w-full opacity-50 cursor-not-allowed"
               variant="outline"
-              nativeButton={false}
-              render={<a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" />}
+              disabled
             >
-              Message us
+              Coming soon
             </Button>
           </div>
 

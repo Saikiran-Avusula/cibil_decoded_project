@@ -20,11 +20,12 @@ export function Consultation() {
             </div>
             <div>
               <h3 className="font-heading text-xl text-ink">Phone call</h3>
-              <p className="text-sm text-muted-text mt-1">Speak directly with an expert</p>
+              <p className="text-sm text-muted-text mt-1">Will be soon available </p>
             </div>
             <Button
               className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA]"
               variant="outline"
+              disabled
               nativeButton={false}
               render={<a href="tel:+919876543210" />}
             >
@@ -39,7 +40,7 @@ export function Consultation() {
             </div>
             <div>
               <h3 className="font-heading text-xl text-ink">WhatsApp</h3>
-              <p className="text-sm text-muted-text mt-1">Chat at your convenience</p>
+              <p className="text-sm text-muted-text mt-1">Will be soon available</p>
             </div>
             <Button
               className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA]"

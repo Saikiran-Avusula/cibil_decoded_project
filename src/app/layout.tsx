@@ -17,11 +17,12 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   // TODO: replace with the production domain once known
   metadataBase: new URL("https://cibildecoded.in"),
-  title: "CIBIL Decoded — Know your credit, own your story",
+  title: "CIBIL Decoded - Know your credit, own your story",
   description:
     "Credit-report guidance and loan-assistance service in Hyderabad. We help you understand your credit report, identify discrepancies, and navigate disputes.",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "/logo.png",
   },
   openGraph: {

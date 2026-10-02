@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
           
           <section>
             <h2 className="text-xl font-sora font-semibold text-ink mt-6 mb-2">What we collect</h2>
-            <p>From the enquiry form: name, mobile number, email, city, the type of help needed, preferred contact method and time, and your description. Later, only with your written consent, we may collect credit report details needed for your case.</p>
+            <p>From the enquiry form, we collect your name, mobile number, email, city, type of help required, preferred contact method and time, and a brief description of your case. If needed at a later stage, and only with your explicit permission, we may collect your credit report or other relevant details necessary to assist you.</p>
           </section>
 
           <section>

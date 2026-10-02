@@ -25,6 +25,10 @@ const FAQS = [
   {
     question: "Is my personal data safe with you?",
     answer: "Absolutely! Your privacy and data security are our top priorities. We never request sensitive information such as PAN cards, Aadhaar details, bank passwords, or OTPs—on our website without your explicit consent and a verified use case."
+  },
+  {
+    question: "What if I'm not happy with the service?",
+    answer: "If you ever have a concern about our service, talk to us directly first. We respond honestly and work to resolve it properly."
   }
 ];
 

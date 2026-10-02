@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* 4-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* Column 1: Brand blurb */}
           <div className="flex flex-col gap-4">
             <div className="bg-white rounded-lg px-6 py-3 inline-flex items-center justify-center self-start w-fit">
@@ -29,7 +29,7 @@ export function Footer() {
             <h3 className="text-white font-sora font-semibold mb-2">Contact Us</h3>
             {/* <p className="text-sm">Phone: <a href="tel:+919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
             <p className="text-sm">Email: <a href="mailto:support@cibildecoded.in" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">cibildecoded@gmail.com</a></p>
-          {/* <p className="text-sm">WhatsApp: <a href="https://wa.me/919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
+            {/* <p className="text-sm">WhatsApp: <a href="https://wa.me/919876543210" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Will soon be available</a></p> */}
           </div>
 
           {/* Column 3: Links */}
@@ -56,9 +56,9 @@ export function Footer() {
         {/* Disclaimer + copyright */}
         <div className="border-t border-white/10 pt-8 flex flex-col items-center gap-4">
           <p className="text-xs text-center max-w-4xl leading-relaxed text-white/60">
-            <strong>Disclaimer:</strong> CIBIL Decoded is an independent credit-report guidance and loan-assistance service. 
-            We are <strong>not</strong> affiliated with TransUnion CIBIL, Experian, Equifax, or CRIF High Mark. 
-            We are not a credit bureau and are not RBI-regulated. We do not provide loans directly, nor do we guarantee any specific 
+            <strong>Disclaimer:</strong> CIBIL Decoded is an independent credit-report guidance and loan-assistance service.
+            We are <strong>not</strong> affiliated with TransUnion CIBIL, Experian, Equifax, or CRIF High Mark.
+            We are not a credit bureau and are not RBI-regulated. We do not provide loans directly, nor do we guarantee any specific
             outcomes regarding your credit score or loan approval. All services are subject to our terms and conditions.
           </p>
           <p className="text-xs text-white/40">

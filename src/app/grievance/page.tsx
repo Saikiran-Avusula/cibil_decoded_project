@@ -13,11 +13,14 @@ export default function GrievancePage() {
         </Link>
         <h1 className="text-3xl font-sora font-bold text-ink mb-6">Grievance Redressal</h1>
         <div className="prose prose-slate max-w-none text-muted-text space-y-4">
+          <p className="text-[#0A2540] font-medium p-4 bg-[#F4F7FA] rounded-md border border-line">
+            If you ever have a concern about our service, talk to us directly first. We respond honestly and work to resolve it properly.
+          </p>
           <p>If you&apos;re unhappy with our service, write to:</p>
           <ul className="list-none pl-0 space-y-2 font-medium text-ink">
             <li>Grievance officer: Saikiran Avusula</li>
             <li>Email: cibildecoded@gmail.com</li>
-            <li>Phone: [Please insert your real phone number here]</li>
+            {/* <li>Phone: </li> */}
           </ul>
           <p>
             We acknowledge complaints within 2 working days and aim to resolve within 15 days.

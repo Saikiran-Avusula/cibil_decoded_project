@@ -20,7 +20,7 @@ export default function TermsPage() {
             We do not guarantee any change to your credit score, removal of any entry, or loan approval. Only the lender that reported the data can correct it. Loan approval, amount and terms are decided by each lender, not by us.
           </p>
           <p>
-            You agree to give us accurate information, log into your own accounts yourself, and never share passwords or OTPs with us. Our fees, if any, are agreed in writing before work starts.
+            You agree to provide accurate information, log in to your own accounts yourself, and never share your passwords or OTPs with us. Any applicable fees, if charged, will be mutually discussed and agreed upon before work begins.
           </p>
           <p>
             These terms are governed by the laws of India. Courts at Hyderabad, Telangana have jurisdiction.

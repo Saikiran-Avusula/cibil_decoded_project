@@ -69,7 +69,7 @@ export function ContactForm() {
     } catch (error) {
       console.error("Form submission error:", error);
     }
-    
+
     setIsSuccess(true);
     form.reset();
   };
@@ -164,29 +164,29 @@ export function ContactForm() {
                   <div className="md:col-span-2">
                     <FormField
                       control={form.control}
-                    name="problemType"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-ink">Primary Issue</FormLabel>
-                        <Select onValueChange={field.onChange} value={field.value}>
-                          <FormControl>
-                            <SelectTrigger className="border-line focus:ring-[#004AAD]">
-                              <SelectValue placeholder="Select an issue" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            <SelectItem value="score_drop">Unexplained Score Drop</SelectItem>
-                            <SelectItem value="late_payment">Incorrect Late Payment</SelectItem>
-                            <SelectItem value="settlement">Settlement/Default Status</SelectItem>
-                            <SelectItem value="identity_theft">Identity Theft / Fraud</SelectItem>
-                            <SelectItem value="loan_assistance">Looking for a Loan</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                        <FormMessage className="text-xs text-muted-text" />
-                      </FormItem>
-                    )}
-                  />
+                      name="problemType"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-ink">Primary Issue</FormLabel>
+                          <Select onValueChange={field.onChange} value={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="border-line focus:ring-[#004AAD]">
+                                <SelectValue placeholder="Select an issue" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="score_drop">Unexplained Score Drop</SelectItem>
+                              <SelectItem value="late_payment">Incorrect Late Payment</SelectItem>
+                              <SelectItem value="settlement">Settlement/Default Status</SelectItem>
+                              <SelectItem value="identity_theft">Identity Theft / Fraud</SelectItem>
+                              <SelectItem value="loan_assistance">Looking for a Loan</SelectItem>
+                              <SelectItem value="other">Other</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage className="text-xs text-muted-text" />
+                        </FormItem>
+                      )}
+                    />
                   </div>
                   <div className="grid grid-cols-2 gap-4 md:col-span-2">
                     <FormField
@@ -267,7 +267,7 @@ export function ContactForm() {
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        
+
                         <FormLabel className="text-[12px] text-muted-text leading-snug cursor-pointer select-none font-normal">
                           <strong className="text-ink font-semibold">I agree:</strong>We never request sensitive data without your explicit approval. Read our{" "}
                           <a href="/privacy" className="text-[#004AAD] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-1 rounded-sm" target="_blank" rel="noopener noreferrer">Privacy Policy</a>{" "}

@@ -12,18 +12,18 @@ export function WhatWeSolve() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg border border-line flex flex-col gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
+          <div className="bg-white p-5 sm:p-6 rounded-xl border border-line flex flex-col gap-4">
             <Search className="w-6 h-6 text-[#004AAD]" />
             <h3 className="font-heading text-xl text-ink">Understand</h3>
             <p className="text-muted-text text-sm">We decode your credit report so you know exactly what is affecting your score.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg border border-line flex flex-col gap-4">
+          <div className="bg-white p-5 sm:p-6 rounded-xl border border-line flex flex-col gap-4">
             <ShieldAlert className="w-6 h-6 text-[#004AAD]" />
             <h3 className="font-heading text-xl text-ink">Resolve</h3>
             <p className="text-muted-text text-sm">We guide you through the dispute process to fix errors and inaccuracies.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg border border-line flex flex-col gap-4">
+          <div className="bg-white p-5 sm:p-6 rounded-xl border border-line flex flex-col gap-4">
             <IndianRupee className="w-6 h-6 text-[#004AAD]" />
             <h3 className="font-heading text-xl text-ink">Finance</h3>
             <p className="text-muted-text text-sm">We connect you with the right lending partners when your profile is ready.</p>

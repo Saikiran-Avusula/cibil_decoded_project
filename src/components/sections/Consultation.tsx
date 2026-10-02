@@ -12,45 +12,45 @@ export function Consultation() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
           {/* Phone Card */}
-          <div className="p-6 rounded-lg border border-line flex flex-col items-center text-center gap-4 ">
+          <div className="p-5 sm:p-6 rounded-xl border border-line flex flex-col items-center text-center gap-4">
             <div className="w-12 h-12 bg-[#F4F7FA] rounded-lg flex items-center justify-center">
               <Phone className="w-6 h-6 text-[#004AAD]" />
             </div>
             <div>
               <h3 className="font-heading text-xl text-ink">Phone call</h3>
-              <p className="text-sm text-muted-text mt-1">Will be soon available </p>
+              <p className="text-sm text-muted-text mt-1">Quick voice discussion</p>
             </div>
             <Button
-              className="mt-2 w-full opacity-50 cursor-not-allowed"
+              className="mt-2 w-full cursor-not-allowed border-[#004AAD] text-[#004AAD] font-bold"
               variant="outline"
               disabled
             >
-              Coming soon
+              Call now
             </Button>
           </div>
 
           {/* WhatsApp Card */}
-          <div className="p-6 rounded-lg border border-line flex flex-col items-center text-center gap-4 ">
+          <div className="p-5 sm:p-6 rounded-xl border border-line flex flex-col items-center text-center gap-4">
             <div className="w-12 h-12 bg-[#F4F7FA] rounded-lg flex items-center justify-center">
               <MessageCircle className="w-6 h-6 text-[#004AAD]" />
             </div>
             <div>
               <h3 className="font-heading text-xl text-ink">WhatsApp</h3>
-              <p className="text-sm text-muted-text mt-1">Will be soon available</p>
+              <p className="text-sm text-muted-text mt-1">Chat with our team</p>
             </div>
             <Button
-              className="mt-2 w-full opacity-50 cursor-not-allowed"
+              className="mt-2 w-full cursor-not-allowed border-[#004AAD] text-[#004AAD] font-bold"
               variant="outline"
               disabled
             >
-              Coming soon
+              Chat now
             </Button>
           </div>
 
           {/* Video Card */}
-          <div className="p-6 rounded-lg border border-line flex flex-col items-center text-center gap-4 ">
+          <div className="p-5 sm:p-6 rounded-xl border border-line flex flex-col items-center text-center gap-4">
             <div className="w-12 h-12 bg-[#F4F7FA] rounded-lg flex items-center justify-center">
               <Video className="w-6 h-6 text-[#004AAD]" />
             </div>
@@ -59,7 +59,7 @@ export function Consultation() {
               <p className="text-sm text-muted-text mt-1">Detailed face-to-face review</p>
             </div>
             <Button
-              className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA]"
+              className="mt-2 w-full border-[#004AAD] text-[#004AAD] hover:bg-[#F4F7FA] font-bold"
               variant="outline"
               nativeButton={false}
               render={<a href="/book" />}

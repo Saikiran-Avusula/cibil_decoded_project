@@ -77,7 +77,7 @@ export function Hero() {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <section className="bg-white py-16 md:py-20 px-4 sm:px-6">
+    <section className="bg-white pt-24 pb-12 md:pt-28 md:pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="grid grid-cols-1 [@media(min-width:820px)]:grid-cols-[1.1fr_0.9fr] gap-12 items-center"
@@ -87,7 +87,7 @@ export function Hero() {
         >
           {/* ── Left column ── */}
           <div className="space-y-6 max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-heading text-ink leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading text-ink leading-tight">
               Your credit report,{" "}
               <span
                 className="bg-clip-text text-transparent"
@@ -104,14 +104,14 @@ export function Hero() {
               they&apos;re ready.
             </p>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               {/* Primary — navy gradient */}
               <Button
                 size="lg"
                 id="hero-cta-primary"
                 nativeButton={false}
                 render={<a href="#contact" />}
-                className="border-0 text-white font-semibold"
+                className="border-0 text-white font-semibold w-full sm:w-auto"
                 style={{ background: "linear-gradient(90deg, #5DE0E6, #004AAD)", color: "#fff" }}
               >
                 Get your credit issue reviewed
@@ -123,6 +123,7 @@ export function Hero() {
                 id="hero-cta-secondary"
                 nativeButton={false}
                 render={<a href="#loans" />}
+                className="w-full sm:w-auto"
                 style={{ borderColor: "#0C2340", color: "#0C2340" }}
               >
                 Explore loan options

@@ -6,6 +6,7 @@ import { Process } from "@/components/sections/Process";
 import { Problems } from "@/components/sections/Problems";
 import { Loans } from "@/components/sections/Loans";
 import { Consultation } from "@/components/sections/Consultation";
+import { ALL_REVIEWS } from "@/lib/reviews-data";
 import React, { lazy, Suspense } from 'react';
 
 // Lazy load heavy components below the fold
@@ -13,23 +14,6 @@ const Reviews = lazy(() => import("@/components/sections/Reviews").then(mod => (
 const FAQ = lazy(() => import("@/components/sections/FAQ").then(mod => ({ default: mod.FAQ })));
 const ContactForm = lazy(() => import("@/components/sections/ContactForm").then(mod => ({ default: mod.ContactForm })));
 const Footer = lazy(() => import("@/components/sections/Footer").then(mod => ({ default: mod.Footer })));
-
-const DEMO_REVIEWS = [
-  {
-    id: "1",
-    name: "Ramesh Kumar",
-    city: "Hyderabad",
-    problem: "Wrong active loan on report",
-    quote: "I was rejected for a home loan because a closed two-wheeler loan was still showing active. The team guided me on exactly how to dispute it.",
-  },
-  {
-    id: "2",
-    name: "Sneha Reddy",
-    city: "Vijayawada",
-    problem: "Identity mismatch",
-    quote: "Someone else's default was showing up on my CIBIL due to a similar name. CIBIL Decoded helped me understand the process to get it removed.",
-  },
-];
 
 export default function Home() {
   return (
@@ -50,7 +34,7 @@ export default function Home() {
         
         {/* Below the fold content loaded asynchronously */}
         <Suspense fallback={<div className="py-20 text-center text-slate-400">Loading sections...</div>}>
-          <Reviews reviews={DEMO_REVIEWS} />
+          <Reviews reviews={ALL_REVIEWS} />
           <FAQ />
           <ContactForm />
         </Suspense>

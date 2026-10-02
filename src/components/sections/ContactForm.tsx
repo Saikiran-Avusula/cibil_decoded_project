@@ -300,6 +300,9 @@ export function ContactForm() {
                   </div>
                 )}
 
+                <p className="text-[13px] text-muted-text italic">
+                  If you ever have a concern about our service, talk to us directly first. We respond honestly and work to resolve it properly.
+                </p>
                 <Button
                   type="submit"
                   disabled={form.formState.isSubmitting}

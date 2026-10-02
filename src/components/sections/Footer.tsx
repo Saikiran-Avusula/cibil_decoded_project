@@ -38,6 +38,9 @@ export function Footer() {
             <Link href="/privacy" className="text-sm hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Privacy Policy</Link>
             <Link href="/terms" className="text-sm hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Terms of Service</Link>
             <Link href="/grievance" className="text-sm hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] focus-visible:ring-offset-2 rounded-sm">Grievance Redressal</Link>
+            <p className="text-xs text-white/70 mt-2 italic leading-relaxed">
+              If you ever have a concern about our service, talk to us directly first. We respond honestly and work to resolve it properly.
+            </p>
           </div>
 
           {/* Column 4: Business Details */}

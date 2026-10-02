@@ -98,7 +98,7 @@ export function Hero() {
             </h1>
 
             <p className="text-base md:text-lg text-muted-text leading-relaxed">
-             We help you decode your credit report, spot errors, and resolve disputes with bureaus, then connect you with the right lenders when you're ready.
+             We help you decode your credit report, spot errors, and resolve disputes with bureaus, then connect you with the right lenders when you&apos;re ready.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">

@@ -98,7 +98,7 @@ export default function BookMeetingPage() {
             <div className="text-center py-12">
               <h3 className="font-heading text-xl text-[#0A2540] mb-2">Request Received</h3>
               <p className="text-muted-text">
-                Your consultation request has been sent. We'll send a confirmation email with meeting details shortly.
+                Your consultation request has been sent. We&apos;ll send a confirmation email with meeting details shortly.
               </p>
               <Button
                 variant="outline"

@@ -13,7 +13,7 @@ export default function GrievancePage() {
         </Link>
         <h1 className="text-3xl font-sora font-bold text-ink mb-6">Grievance Redressal</h1>
         <div className="prose prose-slate max-w-none text-muted-text space-y-4">
-          <p>If you're unhappy with our service, write to:</p>
+          <p>If you&apos;re unhappy with our service, write to:</p>
           <ul className="list-none pl-0 space-y-2 font-medium text-ink">
             <li>Grievance officer: Saikiran Avusula</li>
             <li>Email: cibildecoded@gmail.com</li>

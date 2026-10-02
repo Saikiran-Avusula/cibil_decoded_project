@@ -89,7 +89,7 @@ export function ContactForm() {
             <div className="text-center py-12">
               <h3 className="font-heading text-xl text-[#0A2540] mb-2">Request Received</h3>
               <p className="text-muted-text">
-                Your request has been sent. We'll send a confirmation email shortly.
+                Your request has been sent. We&apos;ll send a confirmation email shortly.
               </p>
               <Button
                 variant="outline"
